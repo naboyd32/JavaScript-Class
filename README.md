@@ -7,3 +7,6 @@ Class 0. Course Overview
 --------------------------
 [Agenda](class_0/OVERVIEW.md)
 [Assignments](class_0/assignments/README.md)
+/**
+ Entrance assignment completed!
+**/
