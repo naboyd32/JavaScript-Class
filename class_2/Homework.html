@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js">
+</script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+ let birthDay = prompt ('What is your birthday? (yyyy/mm/dd)');
+ let birthDate = new Date(birthDay);
+ let birthSeconds = birthDate.getTime();
+ let today = new Date();
+ let todaySeconds = today.getTime();
+ let days = (todaySeconds - birthSeconds);
+ let daysDays = (days / 86400000);
+ echo("You are " + daysDays + " old.");
+ </script>
+</body>
+</html>
