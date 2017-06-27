@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+ function Movie(title){
+	this.title = title;
+	this.ratings = [];
+	this.avgRating = 0;
+	this.addRating = function (star){
+		this.ratings.push(star);
+		let sum = 0;
+		for (let i = 0; i < this.ratings.length; i++) {
+			sum += this.ratings[i];
+		}
+		this.avgRating = (sum / this.ratings.length);
+	}
+}
+let movie = new Movie("Batman Begins");
+console.log(movie.title);
+console.log(movie.avgRating);
+movie.addRating(9);
+console.log(movie.avgRating);
+movie.addRating(7);
+console.log(movie.avgRating);
+console.log(movie.ratings);
+ </script>
+</body>
+</html>
