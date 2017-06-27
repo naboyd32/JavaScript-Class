@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+    let number = prompt('Enter a number, any number!');
+    number = Number(number);
+    let now = new Date();
+    let hours = now.getHours();
+    console.log(hours);
+    let time = hours + number;
+    console.log(time);
+    echo(time % 12)
+ </script>
+</body>
+</html>
