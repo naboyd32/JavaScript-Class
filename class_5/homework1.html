@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+ function charCount(str) {
+ 	let counts = {};
+ 	for (let i = 0; i < str.length; i++) {
+ 		let char = str.charAt(i);
+ 		if (counts[char]) {
+ 			counts[char]++;
+ 		} else {
+ 			counts[char] = 1;
+ 		}
+ 	}
+ 	return counts;
+ }
+ let result = charCount("Pack my box with five dozen liquor jugs.");
+let aCount = result.a;
+let spaceCount = result[' '];
+console.log(aCount); // Should output 1
+console.log(spaceCount); // Should output 7
+console.log(result);
+ </script>
+</body>
+</html>
