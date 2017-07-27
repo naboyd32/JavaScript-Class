@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+	let palindromePrompt = prompt ('Enter a word to see if it is a Palindrome!');
+ 
+	function isPalindrome(word){
+	   let len = word.length;
+	   for (let i = 0; i < len/2; i++) {
+	      let b = word.charAt(i);
+		  let e = word.charAt(len - 1 - i);
+		  if (b != e) {
+		    return false;
+		  } 
+	   }
+	   
+	   return true;
+	}
+	
+	let isIt = isPalindrome(palindromePrompt);
+	echo(isIt);
+ </script>
+</body>
+</html>
