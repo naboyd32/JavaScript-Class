@@ -59,11 +59,10 @@
     (function (){
     
     String.prototype.capitalize = function (){
-        return this.charAt(0).toUpperCase() + this.toLowerCase(1);
+        return this.charAt(0).toUpperCase() + this.slice(1);
         };
         let a = "lorem ipsum";
-        console.log(a.capitalize()
-        );
+        console.log(a.capitalize());
         
      })();
     </script>
